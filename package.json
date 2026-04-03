@@ -9,6 +9,9 @@
     "build": "vite build",
     "pack": "vite build && dashtop-widget pack"
   },
+  "dependencies": {
+    "ts-fsrs": "^4.0.0"
+  },
   "devDependencies": {
     "@dashtop/widget-sdk": "file:../../dashtop/packages/widget-sdk",
     "vite": "^6.0.0",
