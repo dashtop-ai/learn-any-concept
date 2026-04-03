@@ -1,0 +1,36 @@
+{
+  "name": "Learn Any Concept",
+  "widgetType": "learn-any-concept",
+  "version": "1.0.0",
+  "description": "AI tutoring app — explain any concept at your level, quiz yourself, track what you've learned",
+  "category": "ai",
+  "tags": ["learning", "education", "tutoring", "ai", "quiz", "explain"],
+  "author": {
+    "name": "Dashtop Community",
+    "username": "dashtop-ai"
+  },
+  "permissions": ["network:fetch"],
+  "defaultConfig": {
+    "level": "beginner",
+    "style": "eli5"
+  },
+  "defaultSize": { "w": 6, "h": 5 },
+  "minSize": { "w": 4, "h": 4 },
+  "settingsSchema": {
+    "type": "object",
+    "properties": {
+      "level": {
+        "type": "string",
+        "title": "Explanation Level",
+        "enum": ["beginner", "intermediate", "expert"],
+        "default": "beginner"
+      },
+      "style": {
+        "type": "string",
+        "title": "Explanation Style",
+        "enum": ["eli5", "textbook", "analogy"],
+        "default": "eli5"
+      }
+    }
+  }
+}
