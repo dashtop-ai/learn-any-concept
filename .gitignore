@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.dashtop-dev/
+*.dashtop
